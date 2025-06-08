@@ -1,0 +1,128 @@
+.searchBarCont {
+    display: flex;
+    flex-direction: column;
+}
+
+.searchBar {
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+}
+
+.searchBar h1 {
+    margin: 0;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.searchBar div {
+    display: flex;
+    align-items: center;
+}
+
+.searchBar input {
+    font-size: 16px;
+    padding: 0.7rem 1.4rem;
+    outline: none;
+    font-weight: 400;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 2px solid #dee2e6;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.optionsBar {
+    display: flex;
+    border-radius: 6px;
+    justify-content: space-between;
+    padding: 1.5rem 1.5rem;
+    background-color: white;
+}
+
+.inputCont {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputCont label {
+    color: #868492;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.inputCont input,
+.inputCont select {
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: right center;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.search {
+    width: 160px !important;
+}
+
+.inputCont input::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.calender {
+    background-image: url('../../assets/Calendar.svg');
+    background-size: 15px 15px !important;
+}
+
+.chevrondown {
+    background-image: url('../../assets/chevron-down.svg');
+}
+
+.optionsBar span {
+    border-right: 2px solid #dee2e6;
+}
+
+.optionsBar button {
+    font-size: 16px;
+    padding: 0.8rem 2.5rem;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color: #fff;
+    background-color: #5a4bda;
+}
+
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .searchBar {
+        flex-direction: column;
+    }
+
+    .searchBar h1{
+        font-size: 30px;
+    }
+
+    .searchBar input{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 920px) {
+    .optionsBar{
+        gap: 10px;
+        flex-direction: column;
+    }
+}

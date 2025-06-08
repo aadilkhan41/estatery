@@ -1,0 +1,157 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 3rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e9ecef;
+    background-color: #F8F7FE;
+}
+
+.logoCont{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    margin-right: 40px;
+    align-items: center;
+}
+
+.logo img {
+    width: 130px;
+}
+
+.menu{
+    width: 35px;
+    display: none;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 0.8rem;
+    background-color: #5a4bda;
+    background-image: url('../../assets/menu.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+
+.menu.active{
+    background-image: url('../../assets/close.svg');
+}
+
+.navbarcont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbarcont.active{
+    display: flex;
+}
+
+.navLinks {
+    width: 100%;
+    max-width: 660px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navLinks a {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 0.5rem 0.8rem;
+    color: #020926;
+    font-weight: 500;
+    text-wrap: nowrap;
+    text-decoration: none;
+}
+
+.navLinks a svg {
+    width: 30px;
+    height: 22px;
+    margin-top: 5px;
+    stroke: #020926;
+}
+
+.navLinks a:hover svg,
+.navLinks .active svg {
+    stroke: #5a4bda;
+}
+
+.navLinks a:hover,
+.navLinks .active {
+    color: #5a4bda;
+    background-color: #E7E6FB;
+}
+
+.authButtons {
+    display: flex;
+    gap: 20px;
+}
+
+.authButtons button {
+    font-size: 16px;
+    padding: 0.7rem 1.4rem;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.authButtons .login {
+    background: transparent;
+    color: #5a4bda;
+    text-wrap: nowrap;
+    border: 2px solid #E7E6FB;
+}
+
+.authButtons .signup {
+    color: #fff;
+    text-wrap: nowrap;
+    background-color: #5a4bda;
+}
+
+@media (min-width: 0px) and (max-width: 1060px) {
+    .navbar{
+        padding: 20px;
+        align-items: baseline;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .logoCont{
+        width: 100%;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .navbarcont{
+        gap: 20px;
+        display: none;
+        padding-top: 20px;
+        align-items: baseline;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .navLinks{
+        gap: 5px;
+        width: auto;
+        flex-direction: column;
+    }
+}

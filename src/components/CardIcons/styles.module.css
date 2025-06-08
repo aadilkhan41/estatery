@@ -1,0 +1,17 @@
+.icon{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.icon svg{
+    width: 18px;
+    height: 18px;
+    stroke: #7064f0;
+}
+
+.icon p{
+    color: #868492;
+    font-size: 14px;
+    margin: 10px 0;
+}

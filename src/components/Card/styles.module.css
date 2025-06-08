@@ -1,0 +1,115 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    border: 2px solid #e9ecef;
+}
+
+.coverSec{
+    position: relative;
+}
+
+.cover{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+}
+
+.popular{
+    display: flex;
+    width: 90px;
+    gap: 5px;
+    left: -10px;
+    bottom: -12px;
+    position: absolute;
+    border-radius: 6px;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #7064f0;
+}
+
+.popular img{
+    width: 22px;
+    height: 22px;
+    object-fit: cover;
+}
+
+.popular p{
+    margin: 0;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.details{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header p{
+    color: #868492;
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.header strong{
+    color: #7064f0;
+    font-size: 22px;
+}
+
+.header button{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #E7E6FB;
+    background-color: transparent;
+}
+
+.header svg{
+    stroke: #7064f0;
+    width: 20px;
+    height: 20px;
+}
+
+.header button.active{
+    background-color: #7064f0;
+    border: 2px solid #7064f0;
+}
+
+.header button.active svg{
+    stroke: #E7E6FB;
+}
+
+.address h2{
+    font-weight: 500;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.address p{
+    color: #868492;
+    font-weight: 400;
+    margin: 0;
+    padding: 10px 0 12px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.icons{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
