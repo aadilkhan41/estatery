@@ -30,7 +30,7 @@ A **Single Page Application** built with **React** to list rental properties wit
 ![Listings Page](screenshots/property-listings.jpg)
 
 ### ❤️ Favorites Page
-![Favorites Page](screenshots/favorites.png)
+![Favorites Page](screenshots/favorites.jpg)
 
 ---
 
